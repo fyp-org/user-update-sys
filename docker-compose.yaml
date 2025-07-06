@@ -1,0 +1,15 @@
+services:
+  auth-reg:                     
+    image: matveyb2005/user-update-sys:latest
+    container_name: user-update-sys
+    env_file:
+      - .env
+    ports:
+      - 8000:8000
+    restart: always               
+    networks:
+      - fyp-default
+      
+networks:
+  fyp-default:
+    external: true
