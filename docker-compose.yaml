@@ -1,7 +1,7 @@
 services:
   auth-reg:                     
-    image: matveyb2005/user-update-sys:latest
-    container_name: user-update-sys
+    image: matveyb2005/user-custom-sys:latest
+    container_name: user-custom-sys
     env_file:
       - .env
     ports:
